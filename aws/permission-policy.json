@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:PutItem", "dynamodb:GetItem", "dynamodb:Query", "dynamodb:UpdateItem", "dynamodb:Scan"
+      ],
+      "Resource": [
+        "arn:aws:dynamodb:us-east-1:YOUR_ACCOUNT_ID:table/WhatsAppMessages", 
+        "arn:aws:dynamodb:us-east-1:YOUR_ACCOUNT_ID:table/WhatsAppKnowledge",
+        "arn:aws:dynamodb:us-east-1:YOUR_ACCOUNT_ID:table/WhatsAppCategories",
+        "arn:aws:dynamodb:us-east-1:YOUR_ACCOUNT_ID:table/WhatsAppHouse"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["bedrock:InvokeModel"],
+      "Resource": ["*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"],
+      "Resource": ["arn:aws:logs:*:*:*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["lambda:InvokeFunction"],
+      "Resource": ["arn:aws:lambda:us-east-1:YOUR_ACCOUNT_ID:function:WhatsAppProcessor"]
+    }
+  ]
+}
