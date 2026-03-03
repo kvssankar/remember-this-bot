@@ -37,11 +37,11 @@ You can deploy this entire stack using Gemini CLI by giving it high-level instru
 Simply tell Gemini:
 > "Gemini, help me deploy this bot to AWS. Follow the steps in aws/AWS_SETUP.md and use my .env.example values as placeholders."
 
-Gemini will autonomously:
-1. **Create DynamoDB Tables**: Sets up the messaging and knowledge tables.
-2. **Setup IAM Roles**: Creates the necessary permissions for Lambda.
-3. **Zip & Upload**: Packages the code and creates the Lambda function.
-4. **API Gateway**: Sets up the public webhook URL for Telegram/WhatsApp.
+---
+
+## 🌟 Support & Follow
+- **Follow for more**: [BuildWithSankar on X (Twitter)](https://x.com/BuildWithSankar)
+- **Star this repo**: If you find this useful, please give it a ⭐ to stay updated with more GenAI content!
 
 ---
 
