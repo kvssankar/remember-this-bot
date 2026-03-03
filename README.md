@@ -3,9 +3,11 @@
 A "save-everything" Telegram & WhatsApp bot that helps you dump links, notes, images, and ideas, then uses AI (AWS Bedrock) to answer questions or remind you later.
 
 ## 📺 Demo
-<div align="center">
-  <video src="media/demo.mp4" controls width="315" height="560" style="max-width: 100%; height: auto; aspect-ratio: 9/16;"></video>
-</div>
+
+
+
+https://github.com/user-attachments/assets/b82596b6-a15f-4218-8dd4-39ba9ea04d55
+
 
 ## Features
 - **Multi-Platform**: Works on Telegram and WhatsApp.
